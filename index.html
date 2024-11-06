@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Generate a <span class="textHighlight">random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <p><strong>Step 1 -</strong> Input your desired password length: <input type="number" min="5" max="20" value="8" id="lengthElement"></input></p>
+            <p><strong>Step 2 -</strong> Check all the boxes below for the characters you would like to <strong>include</strong> as options for your password:</p>
+             <div id="checkboxList">
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="!" name="!"/>
+                    <label class="checkLabel" for="!">!</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="?" name="?" />
+                    <label class="checkLabel" for="?">?</label>
+                </div>
+               
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="@" name="@" />
+                    <label class="checkLabel" for="@">@</label>
+                </div>
+            
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="#" name="#" />
+                    <label class="checkLabel" for="#">#</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="$" name="$" />
+                    <label class="checkLabel" for="$">$</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="%" name="%" />
+                    <label class="checkLabel" for="%">%</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="^" name="^" />
+                    <label class="checkLabel" for="^">^</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="&" name="&" />
+                    <label class="checkLabel" for="&">&</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="*" name="*" />
+                    <label class="checkLabel" for="*">*</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="(" name="(" />
+                    <label class="checkLabel" for="(">(</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id=")" name=")" />
+                    <label class="checkLabel" for=")">)</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="<" name="<" />
+                    <label class="checkLabel" for="<"><</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id=">" name=">" />
+                    <label class="checkLabel" for=">">></label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="+" name="+" />
+                    <label class="checkLabel" for="+">+</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="-" name="-" />
+                    <label class="checkLabel" for="-">-</label>
+                </div>
+                
+                <div class="checkbox">
+                    <input class="checkInput" type="checkbox" id="_" name="_" />
+                    <label class="checkLabel" for="_">_</label>
+                </div>
+            </div>
+            <button id="generatePasswords"><img class="icon" id="lightningBolt" src="images/lightning-bolt.svg" alt="lightning bolt icon">Generate passwords</button>
+            <hr>
+            <div class="passwordGroup">
+                <div class="password">
+                    <p class="ellipses">
+                        <img class="icon" src="images/ellipses.svg" alt="ellipses icon">
+                    </p>
+                </div>
+                <div class="password">
+                    <p class="ellipses">
+                        <img class="icon" src="images/ellipses.svg" alt="ellipses icon">
+                    </p>
+                </div>
+                <div class="password">
+                    <p class="ellipses">
+                        <img class="icon" src="images/ellipses.svg" alt="ellipses icon">
+                    </p>
+                </div>
+                <div class="password">
+                    <p class="ellipses">
+                        <img class="icon" src="images/ellipses.svg" alt="ellipses icon">
+                    </p>
+                </div>
+            </div>
+            <script type="module" src="index.js"></script>
+        </div>
+    </body>
+</html>
